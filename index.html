@@ -1,0 +1,276 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!------------------------------- Tailwind Css CDN ---------------------------------->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-------------------------------------- Remix Icons ----------------------------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!---------------------------------- Swiper Js CDN ---------------------------------->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-------------------------------- Google Fonts ------------------------------------>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!---------------------------------------  Navbar  -------------------------------------------->
+    <section
+      class="fixed flex justify-center items-center w-screen h-14 md:mt-10 lg:mt-14 z-50"
+    >
+      <!-- Logo -->
+      <div class="w-full h-full flex justify-center items-center">
+        <h1
+          class="text-2xl md:text-5xl lg:text-5xl text-slate-100 font-extrabold"
+        >
+          Tour
+        </h1>
+      </div>
+      <!-- Menu Bar -->
+      <div
+        class="fixed px-16 w-full h-40 -top-96 nav-menu transition-all duration-1000"
+      >
+        <div
+          class="w-full h-full bg-slate-100 rounded-2xl flex flex-col justify-center items-center gap-5 font-semibold text-slate-800"
+        >
+          <a href="#">Home</a>
+          <a href="#">Tours</a>
+          <a href="#">Pricing</a>
+        </div>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="w-full h-full flex justify-center items-center">
+        <div
+          class="hidden lg:w-full lg:h-full lg:text-xl lg:flex justify-center items-center gap-5 text-slate-100"
+        >
+          <a href="#">Home</a>
+          <a href="#">Tours</a>
+          <a href="#">Pricing</a>
+        </div>
+        <button type="button" class="nav-toggle text-slate-100 lg:hidden">
+          <i class="ri-menu-line ri-3x"></i>
+        </button>
+      </div>
+    </section>
+
+    <!---------------------------------------  Home  -------------------------------------------->
+    <section class="w-screen h-screen relative ">
+
+      <!-------------------------------------Container 1 ------------------------------------------->
+      <div
+        class="slider w-full h-full relative bg-[url('https://images.unsplash.com/photo-1504214208698-ea1916a2195a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover object-center"
+      >
+        <div class="w-full h-full bg-black opacity-20"></div>
+        <div
+          class="absolute bottom-1/3 left-10 flex flex-col gap-5 md:gap-5 md:left-40 lg:left-64 lg:gap-5 lg:bottom-1/4"
+        >
+          <h3
+            class="font-semibold text-gray-100 text-2xl md:text-3xl lg:text-3xl"
+          >
+            View
+          </h3>
+          <h1
+            class="font-extrabold text-gray-100 text-6xl md:text-8xl lg:text-7xl"
+          >
+            Thailand
+          </h1>
+          <p
+            class="font-medium text-gray-100 text-lg md:w-3/5 md:text-xl lg:text-xl"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veniam
+            odit ut, temporibus velit tenetur explicabo officiis numquam nam.
+          </p>
+          <a
+            href="#"
+            class="text-slate-800 font-semibold bg-slate-100 px-5 py-3 w-fit h-fit md:text-xl lg:text-xl"
+            >Explore</a
+          >
+        </div>
+      </div>
+
+      <!-------------------------------------Container 2 ------------------------------------------->
+
+      <div
+        class="slider w-full h-full hidden relative bg-[url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover object-center"
+      >
+        <div class="w-full h-full bg-black opacity-20"></div>
+        <div
+          class="absolute bottom-1/3 left-10 flex flex-col gap-5 md:gap-5 md:left-40 lg:left-64 lg:gap-5 lg:bottom-1/4"
+        >
+          <h3
+            class="font-semibold text-gray-100 text-2xl md:text-3xl lg:text-3xl"
+          >
+            Street
+          </h3>
+          <h1
+            class="font-extrabold text-gray-100 text-6xl md:text-8xl lg:text-7xl"
+          >
+            China
+          </h1>
+          <p
+            class="font-medium text-gray-100 text-lg md:w-3/5 md:text-xl lg:text-xl"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veniam
+            odit ut, temporibus velit tenetur explicabo officiis numquam nam.
+          </p>
+          <a
+            href="#"
+            class="text-slate-800 font-semibold bg-slate-100 px-5 py-3 w-fit h-fit md:text-xl lg:text-xl"
+            >Explore</a
+          >
+        </div>
+      </div>
+
+      <!-------------------------------------Container 3 ------------------------------------------->
+
+      <div
+        class="slider w-full h-full hidden relative bg-[url('https://images.unsplash.com/photo-1615592389070-bcc97e05ad01?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover object-center"
+      >
+        <div class="w-full h-full bg-black opacity-20"></div>
+        <div
+          class="absolute bottom-1/3 left-10 flex flex-col gap-5 md:gap-5 md:left-40 lg:left-64 lg:gap-5 lg:bottom-1/4"
+        >
+          <h3
+            class="font-semibold text-gray-100 text-2xl md:text-3xl lg:text-3xl"
+          >
+            Anime Character
+          </h3>
+          <h1
+            class="font-extrabold text-gray-100 text-6xl md:text-8xl lg:text-7xl"
+          >
+            Itadori
+          </h1>
+          <p
+            class="font-medium text-gray-100 text-lg md:w-3/5 md:text-xl lg:text-xl"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veniam
+            odit ut, temporibus velit tenetur explicabo officiis numquam nam.
+          </p>
+          <a
+            href="#"
+            class="text-slate-800 font-semibold bg-slate-100 px-5 py-3 w-fit h-fit md:text-xl lg:text-xl"
+            >Explore</a
+          >
+        </div>
+      </div>
+
+      <!-------------------------------------Container 4 ------------------------------------------->
+
+      <div
+        class="slider w-full h-full hidden relative bg-[url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover object-center"
+      >
+        <div class="w-full h-full bg-black opacity-20"></div>
+        <div
+          class="absolute bottom-1/3 left-10 flex flex-col gap-5 md:gap-5 md:left-40 lg:left-64 lg:gap-5 lg:bottom-1/4"
+        >
+          <h3
+            class="font-semibold text-gray-100 text-2xl md:text-3xl lg:text-3xl"
+          >
+            Nature
+          </h3>
+          <h1
+            class="font-extrabold text-gray-100 text-6xl md:text-8xl lg:text-7xl"
+          >
+            Europe
+          </h1>
+          <p
+            class="font-medium text-gray-100 text-lg md:w-3/5 md:text-xl lg:text-xl"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veniam
+            odit ut, temporibus velit tenetur explicabo officiis numquam nam.
+          </p>
+          <a
+            href="#"
+            class="text-slate-800 font-semibold bg-slate-100 px-5 py-3 w-fit h-fit md:text-xl lg:text-xl"
+            >Explore</a
+          >
+        </div>
+      </div>
+
+      <!-------------------------------------Container 5 ------------------------------------------->
+
+      <div
+        class="slider w-full h-full relative hidden bg-[url('https://images.unsplash.com/photo-1567266565245-c08dc046815f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover object-center"
+      >
+        <div class="w-full h-full bg-black opacity-20"></div>
+        <div
+          class="absolute bottom-1/3 left-10 flex flex-col gap-5 md:gap-5 md:left-40 lg:left-64 lg:gap-5 lg:bottom-1/4"
+        >
+          <h3
+            class="font-semibold text-gray-100 text-2xl md:text-3xl lg:text-3xl"
+          >
+            Nature
+          </h3>
+          <h1
+            class="font-extrabold text-gray-100 text-6xl md:text-8xl lg:text-7xl"
+          >
+            India
+          </h1>
+          <p
+            class="font-medium text-gray-100 text-lg md:w-3/5 md:text-xl lg:text-xl"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veniam
+            odit ut, temporibus velit tenetur explicabo officiis numquam nam.
+          </p>
+          <a
+            href="#"
+            class="text-slate-800 font-semibold bg-slate-100 px-5 py-3 w-fit h-fit md:text-xl lg:text-xl"
+            >Explore</a
+          >
+        </div>
+      </div>
+
+      <!----------------------------------------- Img Toggle Container ------------------------------------->
+
+      <div
+        class="h-fit w-fit bg-white absolute flex gap-2 bottom-20 right-1/3 px-1 py-1 rounded-lg"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="toggle-slider w-14 h-12 rounded-md"
+          alt="img-1"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="toggle-slider w-14 h-12 rounded-md"
+          alt="img-1"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1615592389070-bcc97e05ad01?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="toggle-slider w-14 h-12 rounded-md"
+          alt="img-1"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="toggle-slider w-14 h-12 rounded-md"
+          alt="img-1"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1567266565245-c08dc046815f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="toggle-slider w-14 h-12 rounded-md"
+          alt="img-1"
+        />
+      </div>
+    </section>
+
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+  </body>
+</html>
